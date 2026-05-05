@@ -1,2 +1,3 @@
 # AUTOMATIC-WATER-LEVEL-CHECKER
 an automated system for real-time monitoring.
+Comm (The "Why")What was actually changed in the code?Commit 1"Initial upload: Basic sensor and LCD setup"Added pins for HC-SR04 and initialized the I2C LCD display.Commit 2"Add distance-to-percentage logic and LED triggers"Added the math to convert cm to % and logic for Green/Yellow/Red LEDs.Commit 3"Integrate Blynk IoT for remote monitoring"Added Blynk credentials and Blynk.virtualWrite to send data to the cloud.Commit 4"Fix: Optimize for ESP32 stability (DIO 40MHz)"Updated setup comments and loop timing to prevent the common boot-loop errors.Commit 5"Final: Clean up comments and add IP address display"Added WiFi.localIP() print to LCD for easier debugging during the final demo.
